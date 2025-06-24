@@ -8,15 +8,26 @@ lines = ["Hello world",
         "It is exciting",
         "And i am all 4 it"]
 
-with open("my_text.txt","w",encoding="utf-8") as f:
+with open("my_text.txt","w") as f:
     for line in lines:
         f.write(line + "\n")
 # test
 with open("my_text.txt","r") as f:
     for line in f:
         print(line,end=" ")
+    print()
 
-# question 3
+#question 3
+# print only lines if it contains int
+with open("my_text.txt","r") as f:
+    for line in f:
+        if any(i.isdigit() for i in line):
+            print(line,end = "")
+    print()
+
+
+
+# question 4
 
 total_non_numbers = 0
 total_letter_count = 0

@@ -21,7 +21,7 @@ except IOError as ex:
 
 #writing the dictionary to a new file
 try:
-    with open("new_file.csv", "w", newline='', encoding="utf-8") as file:
+    with open("city_summary.csv", "w", newline='', encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["City","Subject","Count"])
         for city,subjects in result_dict.items():
@@ -31,7 +31,7 @@ except IOError as ex:
     print("Error performing I/O operations on the file: ",ex)
 
 #test the result
-with open("new_file.csv","r", encoding="utf-8-sig") as f:
+with open("city_summary.csv","r", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for row in reader:
             print(row)

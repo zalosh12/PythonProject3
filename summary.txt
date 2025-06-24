@@ -1,0 +1,7 @@
+Hello world | num of words: 2
+It’s the first exercise in I/O | num of words: 6
+That mean it is number 1 | num of words: 5
+Not 2 | num of words: 1
+Not three | num of words: 2
+It is exciting | num of words: 3
+And i am all 4 it | num of words: 5
